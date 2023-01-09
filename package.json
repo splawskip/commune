@@ -1,0 +1,29 @@
+{
+  "name": "commune",
+  "version": "1.0.0",
+  "description": "Tailwind.css first try.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splawskip/commune.git"
+  },
+  "author": "psplawski.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/splawskip/commune/issues"
+  },
+  "homepage": "https://splawskip.github.io/commune/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.0"
+  }
+}

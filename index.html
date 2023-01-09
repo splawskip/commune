@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="box-border subpixel-antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commune</title>
+  </head>
+  <body class="w-full h-screen border-white border-solid border-20 bg-blue-100">
+    <div id="app" class="lg:container px-5 lg:mx-auto w-full h-full flex flex-col justify-between items-start rounded-xl">
+      <header class="w-full flex flex-row justify-between items-center py-10">
+        <a href="#"><img src="./logo.svg" alt="Commune logo" /></a>
+        <ul class="hidden lg:flex flex-row justify-end items-center flex-wrap gap-6">
+          <li><a href="#" class="text-lg font-normal capitalize font-primary text-dark hover:text-indigo-600 transition-colors">features</a></li>
+          <li><a href="#" class="text-lg font-normal capitalize font-primary text-dark hover:text-indigo-600 transition-colors">affiliates</a></li>
+          <li><a href="#" class="text-lg font-normal capitalize font-primary text-dark hover:text-indigo-600 transition-colors">pricing</a></li>
+          <li><a href="#" class="text-lg font-normal capitalize font-primary text-dark hover:text-indigo-600 transition-colors">communities</a></li>
+          <li><button class="py-4 px-6 bg-accent border border-accent border-solid hover:border-accent-light hover:bg-accent-light transition-colors text-white rounded text-lg font-bold capitalize font-primary">join waitlist</button></li>
+        </ul>
+        <button class="lg:hidden space-y-2">
+          <div class="w-8 h-1 bg-black"></div>
+          <div class="w-8 h-1 bg-black"></div>
+          <div class="w-8 h-1 bg-black"></div>
+        </button>
+      </header>
+      <main class="w-full flex flex-col justify-start items-center lg:items-start font-primary lg:bg-main-decoration lg:bg-no-repeat lg:bg-contain lg:bg-right lg:bg-origin-border">
+        <p class="bg-accent text-accent-light rounded-full px-6 py-2 mb-6 text-lg text-center md:text-left">We are now allowing early-access for users. <a href="#" class="font-bold underline hover:text-white transition-colors">Learn more.</a></p>
+        <h1 class="w-full lg:w-1/2 text-accent-dark text-6xl leading-11 font-bold mb-2 text-center lg:text-left">Build a highly engaged community with no effort.</h1>
+        <p class="w-full lg:w-1/2 text-lg font-normal text-dark mb-4 text-center lg:text-left">Commune offers the tools you need to build a highly engaged community with little to no effort. Simply setup your Commune workspace, and manage everything from members to content from one central dashboard.</p>
+        <form action="join.php" class="w-full md:w-3/4 flex flex-row justify-start items-stretch flex-wrap">
+          <input type="email" name="email" id="email" placeholder="Enter your e-mail address" class="rounded border border-light border-solid text-lg font-normal px-6 py-4 text-dark md:mr-4 w-full md:w-1/3 md:max-lg:grow focus:outline-none focus:border-sky-500 invalid:border-pink-600 invalid:text-pink-600 focus:invalid:text-pink-600 focus:invalid:border-pink-600" />
+          <button type="submit" class="py-4 px-6 bg-accent border border-accent border-solid hover:border-accent-light hover:bg-accent-light transition-colors text-white rounded text-lg font-bold capitalize font-primary placeholder-light w-full md:w-auto mt-4 md:mt-0">Join waitlist</button>
+        </form>
+      </main>
+      <footer class="mt-4 mb-16">
+        <h6 class="text-accent-dark text-lg font-bold mb-4">Used by these companies:</h6>
+        <ul class="flex flex-row justify-between items-center flex-wrap gap-4">
+          <li>
+            <a href="https://www.atlassian.com/"
+              ><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-20 fill-[#7B7989] hover:fill-atlassian hover:opacity-100 transition-opacity">
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM19.0917 20.6362C18.7344 20.2544 18.1775 20.2761 17.9346 20.7619L12.074 32.4833C11.9654 32.7005 11.977 32.9584 12.1046 33.165C12.2323 33.3716 12.4578 33.4973 12.7007 33.4973H20.8624C21.1295 33.5035 21.3752 33.3517 21.4891 33.1099C23.249 29.4712 22.1828 23.9388 19.0917 20.6362ZM23.3918 9.97536C20.1139 15.1688 20.3302 20.9207 22.4892 25.239L26.4247 33.1099C26.5434 33.3473 26.786 33.4972 27.0513 33.4972H35.2129C35.4558 33.4972 35.6813 33.3715 35.809 33.1649C35.9366 32.9583 35.9482 32.7004 35.8395 32.4832C35.8395 32.4832 24.8597 10.5204 24.5835 9.9709C24.3366 9.47897 23.7093 9.47228 23.3918 9.97536Z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/"
+              ><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-20 fill-[#7B7989] hover:fill-behance hover:opacity-100 transition-opacity">
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM27.5583 18.6699H34.3376V16.7276H27.5583V18.6699ZM33.74 20.3003C32.9242 19.9395 32.0076 19.7583 30.9886 19.7583C29.2742 19.7583 27.8819 20.2944 26.8057 21.3591C25.7325 22.4267 25.1951 23.9606 25.1951 25.9608C25.1951 28.0932 25.7882 29.6345 26.9818 30.5804C28.1694 31.5278 29.5436 32 31.1015 32C32.9875 32 34.455 31.4387 35.5026 30.3176C36.1739 29.6108 36.5532 28.9143 36.636 28.2313H33.5128C33.3321 28.5698 33.1214 28.8342 32.8821 29.0257C32.4471 29.3776 31.8796 29.5543 31.1858 29.5543C30.5265 29.5543 29.9651 29.4088 29.4985 29.1193C28.7278 28.6545 28.3244 27.8422 28.2732 26.6855H36.7971C36.8106 25.6891 36.7775 24.9229 36.6947 24.3942C36.5532 23.4899 36.2432 22.694 35.76 22.008C35.2302 21.2299 34.5574 20.6597 33.74 20.3003ZM22.9449 17.6631C22.1396 16.5821 20.7744 16.0282 18.8448 16H11.2V31.6065H18.3285C19.1323 31.6065 19.8758 31.5382 20.5637 31.3971C21.2516 31.2546 21.8461 30.9947 22.3504 30.6131C22.7989 30.2805 23.1722 29.8706 23.4702 29.3851C23.9413 28.6515 24.1761 27.8214 24.1761 26.8963C24.1761 25.9994 23.9699 25.2362 23.5605 24.6096C23.1466 23.9814 22.5385 23.5226 21.7317 23.2316C22.2631 22.9643 22.6649 22.6673 22.9389 22.3436C23.4281 21.7645 23.6704 20.9968 23.6704 20.0449C23.6704 19.1198 23.4281 18.3269 22.9449 17.6631Z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.3534 18.71H17.7972C18.5543 18.71 19.1775 18.7916 19.6682 18.9535C20.2341 19.1881 20.5171 19.6677 20.5171 20.3968C20.5171 21.0502 20.3019 21.5075 19.8744 21.7659C19.4439 22.0243 18.8855 22.1535 18.2006 22.1535H14.3534V18.71ZM29.1643 22.9078C29.5963 22.4683 30.2074 22.2485 30.9901 22.2485C31.7126 22.2485 32.3162 22.4549 32.8069 22.8692C33.2915 23.2865 33.5655 23.8923 33.6212 24.6942H28.3485C28.4599 23.9428 28.7324 23.3474 29.1643 22.9078ZM14.3534 24.7358H18.2488C18.9261 24.7417 19.4544 24.8308 19.8307 25.0001C20.5036 25.3045 20.8377 25.8613 20.8377 26.6751C20.8377 27.6343 20.4915 28.2817 19.7976 28.6233C19.4168 28.8059 18.881 28.898 18.1946 28.898H14.3534V24.7358Z"
+                  />
+                </g></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.bing.com/"
+              ><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-20 fill-[#7B7989] hover:fill-bing hover:opacity-100 transition-opacity">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM15.2 9.6V35.198L20.9563 38.4L35.3449 30.1009V23.5796L22.577 19.094L25.0835 25.3325L29.0564 27.1965L20.953 31.8744V11.6239L15.2 9.6Z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://bitbucket.org"
+              ><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-20 fill-[#7B7989] hover:fill-bitbucket hover:opacity-100 transition-opacity">
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM13.125 13.6975C12.9034 13.6946 12.6919 13.7899 12.5473 13.9577C12.4026 14.1256 12.3395 14.3488 12.375 14.5675L15.5588 33.895C15.6406 34.3832 16.0612 34.7421 16.5562 34.7463H31.83C32.2015 34.751 32.5206 34.483 32.58 34.1162L35.7637 14.5712C35.7992 14.3525 35.7362 14.1293 35.5915 13.9615C35.4468 13.7937 35.2353 13.6984 35.0137 13.7013L13.125 13.6975Z"
+                  />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5312 27.6663H21.6562L20.3363 20.77H27.7125L26.5312 27.6663Z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.dropbox.com/"
+              ><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-20 fill-[#7B7989] hover:fill-dropbox hover:opacity-100 transition-opacity">
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM18.295 10.4L9.60003 16.0772L15.6122 20.8916L24.3789 15.4782L18.295 10.4ZM9.6 25.7064L18.2949 31.3836L24.3792 26.3052L15.6122 20.8916L9.6 25.7064ZM24.3792 26.3052L30.4633 31.3835L39.1582 25.7063L33.1463 20.8917L24.3792 26.3052ZM39.1583 16.0772L30.4634 10.4L24.3789 15.4782L33.1463 20.8917L39.1583 16.0772ZM24.397 27.3976L18.2951 32.4611L15.6838 30.7563V32.6675L24.397 37.8925L33.1103 32.6675V30.7563L30.499 32.4611L24.397 27.3976Z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitch.tv/"
+              ><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-20 fill-[#7B7989] hover:fill-twitch hover:opacity-100 transition-opacity">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM12.3312 11.2L10.4529 16.2088V36.2416H17.3366V40H21.0948L24.8493 36.2416H30.4825L37.9951 28.7317V11.2H12.3312Z" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8335 13.7029H35.4917V27.4771L31.1088 31.8603H24.224L20.4706 35.6135V31.8603H14.8335V13.7029ZM21.7199 26.2265H24.224V18.7143H21.7199V26.2265ZM28.6052 26.2265H31.1087V18.7143H28.6052V26.2265Z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com"
+              ><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="opacity-20 fill-[#7B7989] hover:fill-twitter hover:opacity-100 transition-opacity">
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM23.2812 19.5075L23.3316 20.338L22.4922 20.2363C19.4369 19.8465 16.7677 18.5245 14.5013 16.3043L13.3934 15.2027L13.108 16.0162C12.5036 17.8296 12.8897 19.7448 14.1488 21.0328C14.8203 21.7446 14.6692 21.8463 13.5109 21.4226C13.108 21.287 12.7554 21.1854 12.7219 21.2362C12.6044 21.3548 13.0072 22.8971 13.3262 23.5072C13.7627 24.3546 14.6524 25.1851 15.6261 25.6766L16.4487 26.0664L15.475 26.0833C14.5349 26.0833 14.5013 26.1003 14.6021 26.4562C14.9378 27.5578 16.264 28.7272 17.7413 29.2357L18.7822 29.5916L17.8756 30.1339C16.5326 30.9135 14.9546 31.3542 13.3766 31.3881C12.6211 31.405 12 31.4728 12 31.5237C12 31.6931 14.0481 32.6422 15.24 33.0151C18.8157 34.1167 23.063 33.6422 26.2526 31.7609C28.5189 30.422 30.7852 27.7612 31.8428 25.1851C32.4136 23.8123 32.9844 21.304 32.9844 20.1007C32.9844 19.3211 33.0347 19.2194 33.9748 18.2872C34.5288 17.7449 35.0492 17.1517 35.15 16.9822C35.3178 16.6602 35.3011 16.6602 34.4449 16.9483C33.018 17.4568 32.8165 17.389 33.5216 16.6263C34.042 16.084 34.6631 15.101 34.6631 14.8129C34.6631 14.762 34.4113 14.8468 34.1259 14.9993C33.8238 15.1688 33.1523 15.423 32.6486 15.5756L31.7421 15.8637L30.9195 15.3044C30.4663 14.9993 29.8283 14.6604 29.4926 14.5587C28.6364 14.3214 27.327 14.3553 26.5548 14.6265C24.4563 15.3891 23.1301 17.3551 23.2812 19.5075Z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
