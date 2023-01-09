@@ -41,7 +41,7 @@ module.exports = {
 			'20': '20px',
 		},
 		backgroundImage: {
-			'main-decoration': "url('main-decoration.png')",
+			'main-decoration': "url('public/main-decoration.png')",
 		},
 		lineHeight: {
 			'11': '4.375rem',
